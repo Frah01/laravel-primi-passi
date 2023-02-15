@@ -25,7 +25,15 @@ Route::get('about-us', function () {
         'age' => '21'
     ];
 
-
-
     return view('about_me', $data);
 })->name('about-me');
+
+
+Route::get('about-me-2', function () {
+
+    $data = [
+        'country' => 'Rome',
+        'date' => '13/06/2001'
+    ];
+    return view('about_me_2', $data);
+})->name('about-me-2');
